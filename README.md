@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# NewsWave App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a responsive News application tracking all the current headlines in the category that user selects. The user can
+choose the desired category and for this purpose react‑router has been used. The user can see the title, description, date, author and source of the article. The user can also click on the article to read more about it.
 
-## Available Scripts
+## API used
 
-In the project directory, you can run:
+For this project used the news api available at the following link : [Link of the API](https://newsapi.org/). Note: The free version of this api runs only on localhost and thus for setting up the project on your local system, the user must generate his own api key.
 
-### `npm start`
+## Project Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+For setting up this project, after downloading the source code:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Create a .env.local file
 
-### `npm test`
+Inside this file, put your api key in the file in the following format : REACT_APP_NEWS_API="Put your api key here"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm run start`
 
-### `npm run build`
+Use this command to run the application on a developement server.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## More info about this application: 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Four react components have been created for this application : 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Loading1.js : This component is used to display the spinner while the application is loading.
 
-### `npm run eject`
+2. Navbar.js : This component is used for the Navbar. The Navbar gives the user the option to navigate to different categories of news.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. NewsItem1.js : This component represnts each card in which one article is displayed. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. News.js : This component is used to display the entire news for the selected category using articles from the news api. Infinite scrolling feature has been added to this application, therefore the user can scroll infinitely in any chosen category (until the api keeps giving responses).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Besides this the App.js component combines all of this and sets up navigation using react router.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Created by : Devansh Agarwal.
