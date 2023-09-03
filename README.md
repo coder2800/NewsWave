@@ -11,9 +11,9 @@ For this project used the news api available at the following link : [Link of th
 
 For setting up this project, after downloading the source code:
 
-### Create a .env.local file
+### Create a `.env.local file`
 
-Inside this file, put your api key in the file in the following format : REACT_APP_NEWS_API="Put your api key here"
+Inside this file, put your api key in the file in the following format : `REACT_APP_NEWS_API="Put your api key here"`
 
 ### `npm run start`
 
@@ -23,13 +23,13 @@ Use this command to run the application on a developement server.
 
 Four react components have been created for this application : 
 
-1. Loading1.js : This component is used to display the spinner while the application is loading.
+1. `Loading1.js` : This component is used to display the spinner while the application is loading.
 
-2. Navbar.js : This component is used for the Navbar. The Navbar gives the user the option to navigate to different categories of news.
+2. `Navbar.js` : This component is used for the Navbar. The Navbar gives the user the option to navigate to different categories of news.
 
-3. NewsItem1.js : This component represnts each card in which one article is displayed. 
+3. `NewsItem1.js` : This component represnts each card in which one article is displayed. 
 
-4. News.js : This component is used to display the entire news for the selected category using articles from the news api. Infinite scrolling feature has been added to this application, therefore the user can scroll infinitely in any chosen category (until the api keeps giving responses).
+4. `News.js` : This component is used to display the entire news for the selected category using articles from the news api. Infinite scrolling feature has been added to this application, therefore the user can scroll infinitely in any chosen category (until the api keeps giving responses).
 
 Besides this the App.js component combines all of this and sets up navigation using react router.
 
